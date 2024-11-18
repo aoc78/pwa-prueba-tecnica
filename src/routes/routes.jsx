@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from '../pages/Home';
 import Dashboard from '../pages/Dashboard';
 import BankDetail from '../pages/BankDetail';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 // Simulación de autenticación
 const isAuthenticated = () => {
