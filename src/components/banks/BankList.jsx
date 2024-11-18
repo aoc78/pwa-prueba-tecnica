@@ -11,7 +11,7 @@ const BankList = () => {
     const fetchBanks = async () => {
       try {
         const institutions = await getInstitutions();
-        // Filtrar bancos que tienen TRANSACTIONS y BALANCES en resources, y sólo form_fields de username y password
+        
         const filteredBanks = institutions.results.filter((bank) => {
           const hasRequiredResources =
             bank.resources &&
@@ -26,7 +26,7 @@ const BankList = () => {
           return hasRequiredResources && hasOnlyUsernameAndPassword;
         });
 
-        setBanks(filteredBanks); // Actualiza el estado con los bancos filtrados
+        setBanks(filteredBanks); 
       } catch (err) {
         setError("Failed to load banks.");
       } finally {

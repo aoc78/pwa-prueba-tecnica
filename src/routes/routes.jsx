@@ -5,7 +5,7 @@ import Dashboard from '../pages/Dashboard';
 import BankDetail from '../pages/BankDetail';
 import Layout from '../components/Layout';
 
-// Simulación de autenticación
+
 const isAuthenticated = () => {
   return !!localStorage.getItem('authToken');
 };
